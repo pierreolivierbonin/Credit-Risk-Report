@@ -2,8 +2,6 @@
 
 By [Pierre-Olivier Bonin](https://github.com/pierreolivierbonin) & [Hamza Benhmani](https://github.com/gzork).
 
-Project for [CEBD1260 - Introduction to Machine Learning](https://www.concordia.ca/cce/courses/details.html?subject=CEBD&catalog_number=1260)
-
 ## Executive Summary
 
 This report summarizes a machine learning project we have conducted using data from Ant Finance’s client’s historical records. Based on seven different datasets, we implement a comprehensive machine learning pipeline that allows to predict which clients are likely to default loan payment. We train a benchmark LightGBM model, aggregate features from the different datasets, merge them into the main one, build and train a new LightGBM model, compare the performance of the models, and lay out the most important features that predict payment defaulting. The improved model yields an AUC score of 0.785900 for correctly predicted payment defaults (a.k.a. "1"s), an improvement of about 2% over the benchmark model. Some of the most interesting features among those with the highest predictive power include the age of the client, the number of consecutive days they have been employed, as well as a number of features we have engineered based on the datasets. This highlights the importance of feature engineering as part of machine learning projects.
